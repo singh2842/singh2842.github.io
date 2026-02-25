@@ -7,7 +7,7 @@ body {
 
 /* Requirement: Select multiple elements (header and footer) */
 header, footer {
-    background-color: #2d413d;
+    background-color: #320a98;
     padding: 20px;
 }
 
@@ -24,13 +24,13 @@ header, footer {
 
 /* Requirement: nth-child selector for odd list items */
 .hobby-list li:nth-child(odd) {
-    background-color: #4b0909;
+    background-color: #371b8c;
 }
 
 /* Navigation Styling (Requirement: remove underlines/add background) */
 nav a {
     text-decoration: none;
-    background-color: #452d6b;
+    background-color: #e7dc15e4;
     border: 1px solid #14428d;
     padding: 5px 10px;
     margin-right: 5px;
