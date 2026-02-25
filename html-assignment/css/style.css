@@ -1,0 +1,41 @@
+/* Requirement: Inheritance - target the body tag for font family and 18px size */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Requirement: Select multiple elements (header and footer) */
+header, footer {
+    background-color: #12624f;
+    padding: 20px;
+}
+
+/* Requirement: Class selector for text colour */
+.site-title {
+    color: #5f415c;
+}
+
+/* Requirement: ID selector with specific box-shadow placement */
+/* 0 horizontal, 0 vertical, 2px blur, 1px spread, black colour */
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+/* Requirement: nth-child selector for odd list items */
+.hobby-list li:nth-child(odd) {
+    background-color: #4b0909;
+}
+
+/* Navigation Styling (Requirement: remove underlines/add background) */
+nav a {
+    text-decoration: none;
+    background-color: #85662d;
+    border: 1px solid #14428d;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #dddddd;
+}
