@@ -7,7 +7,7 @@ body {
 
 /* Requirement: Select multiple elements (header and footer) */
 header, footer {
-    background-color: #12624f;
+    background-color: #2d413d;
     padding: 20px;
 }
 
@@ -19,7 +19,7 @@ header, footer {
 /* Requirement: ID selector with specific box-shadow placement */
 /* 0 horizontal, 0 vertical, 2px blur, 1px spread, black colour */
 #my-image {
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 2px 1px rgb(9, 1, 1);
 }
 
 /* Requirement: nth-child selector for odd list items */
@@ -30,7 +30,7 @@ header, footer {
 /* Navigation Styling (Requirement: remove underlines/add background) */
 nav a {
     text-decoration: none;
-    background-color: #85662d;
+    background-color: #452d6b;
     border: 1px solid #14428d;
     padding: 5px 10px;
     margin-right: 5px;
