@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;  
+}
+
+.grid{
+    background-color: aqua;
+    /* grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat (3, 1fr): */ 
+     grid-template-rows:  1fr 1fr;
+     gap: 1rem;
+}
+
+.grid
+
+.grid div:nth-child(1) {
+    background-color: orangered;
+    grid-column: 1 / 3;
+}
+
+.grid div:nth-child(2) {
+    background-color: blanchedalmond;
+    grid-row: 2/ 4;
+    grid-column: 3 / 4;
+}
+
+.grid div:nth-child(3) {
+    background-color: rgb(57, 72, 34);SSS
+}
+
+
+.grid div:nth-child(4) {
+    background-color: rgb(43, 0, 255);
+}
+
+.grid div:nth-child(5) {
+    background-color: rgb(42, 167, 48);
+}
+.grid div:nth-child(6) {
+    background-color: blueviolet;
+}
