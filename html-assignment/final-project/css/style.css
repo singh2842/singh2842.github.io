@@ -1,208 +1,375 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    background: linear-gradient(to bottom, #fdfdfd, #eef6ff);
+    line-height: 1.7;
 }
 
-/* HEADER */
-header {
-  background-color: #722f37;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-header h1 {
-  margin-bottom: 10px;
-  font-size: 2rem;
-}
-
-/* NAVIGATION */
-nav ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: white;
-  color: #722f37;
-}
-
-/* GENERAL SECTION */
-section {
-  background-color: white;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #722f37;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-/* HOME / HERO */
-#home {
-  text-align: center;
-}
-
-#home p {
-  max-width: 700px;
-  margin: 15px auto;
-}
-
-/* ABOUT */
-#about {
-  background-color: #d6ecff;
-}
-
-/* SERVICES */
-#services ul {
-  list-style: none;
-  margin-top: 15px;
-}
-
-#services li {
-  background-color: #f0f0f0;
-  margin: 8px 0;
-  padding: 12px;
-  border-left: 5px solid #722f37;
-  border-radius: 6px;
-}
-
-/* HOURS */
-#hours {
-  background-color: #d6ecff;
-}
-
-#hours ul {
-  list-style: none;
-  margin-top: 15px;
-}
-
-#hours li {
-  margin: 8px 0;
-  font-weight: bold;
-}
-
-/* LOCATION */
-#location p {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-/* CONTACT */
-#contact {
-  text-align: center;
-}
-
-#contact p {
-  margin: 8px 0;
-}
-
-/* BUTTON STYLE */
-.button,
-a.button {
-  display: inline-block;
-  background-color: #722f37;
-  color: white;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-.button:hover,
-a.button:hover {
-  background-color: #4e1f25;
-}
-
-/* IMAGES */
+/* =========================
+   GENERAL
+========================= */
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 15px auto;
-  border-radius: 10px;
-}
-
-/* SERVICE IMAGES */
-.service-images {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.service-images img {
-  width: 200px;
-  border-radius: 10px;
-}
-
-/* MAP */
-iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 300px;
-  border: 0;
-  display: block;
-  margin: 20px auto 0;
-  border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-  background-color: #722f37;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav ul li {
+    max-width: 100%;
     display: block;
-    margin: 10px 0;
-  }
+    border-radius: 14px;
+}
 
-  section {
-    margin: 15px;
-    padding: 20px;
-  }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-  header h1 {
-    font-size: 1.6rem;
-  }
+.section {
+    padding: 70px 0;
+}
 
-  .service-images img {
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #722F37;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #722F37, #4da6ff);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    background: linear-gradient(135deg, #722F37, #4da6ff);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav a:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    padding: 70px 0;
+    background: linear-gradient(135deg, rgba(114,47,55,0.08), rgba(77,166,255,0.10));
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero h2 {
+    font-size: 2.3rem;
+    color: #222;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+.main-image {
     width: 100%;
-    max-width: 280px;
-  }
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    border: 4px solid white;
+}
+
+/* =========================
+   BACKGROUND HELPERS
+========================= */
+.light-bg {
+    background: linear-gradient(to right, #d6ecff, #f4faff);
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #722F37, #4da6ff);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-top: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.22);
+    background: linear-gradient(135deg, #4da6ff, #722F37);
+}
+
+/* =========================
+   SERVICES
+========================= */
+.services {
+    display: grid;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1px solid rgba(114,47,55,0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.16);
+}
+
+.card img {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #722F37;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #444;
+    font-size: 0.98rem;
+}
+
+/* =========================
+   CENTER TEXT
+========================= */
+.center-text {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* =========================
+   HOURS BOX
+========================= */
+.hours-box {
+    background: linear-gradient(135deg, #722F37, #4da6ff);
+    color: white;
+    max-width: 520px;
+    margin: 30px auto 0;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+.hours-box h3 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.hours-inner {
+    background: rgba(255,255,255,0.92);
+    color: #222;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hours-inner p {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.note {
+    margin-top: 16px;
+    font-size: 0.92rem;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+/* =========================
+   IFRAME / MAP
+========================= */
+iframe {
+    border-radius: 18px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+    margin-top: 15px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: 700;
+    color: #722F37;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 16px;
+    font: inherit;
+    border: 2px solid #d6d6d6;
+    border-radius: 14px;
+    background: white;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4da6ff;
+    box-shadow: 0 0 0 4px rgba(77,166,255,0.15);
+}
+
+.contact-form button {
+    padding: 14px 20px;
+    font: inherit;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #722F37, #4da6ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.22);
+    background: linear-gradient(135deg, #4da6ff, #722F37);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: linear-gradient(135deg, #222, #722F37);
+    color: white;
+    text-align: center;
+    padding: 22px 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.10);
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 760px) {
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header h1 {
+        margin-bottom: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-text-block {
+        flex: 1;
+    }
+
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
