@@ -1,0 +1,208 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #722f37;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #722f37;
+}
+
+/* GENERAL SECTION */
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #722f37;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* HOME / HERO */
+#home {
+  text-align: center;
+}
+
+#home p {
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+/* ABOUT */
+#about {
+  background-color: #d6ecff;
+}
+
+/* SERVICES */
+#services ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#services li {
+  background-color: #f0f0f0;
+  margin: 8px 0;
+  padding: 12px;
+  border-left: 5px solid #722f37;
+  border-radius: 6px;
+}
+
+/* HOURS */
+#hours {
+  background-color: #d6ecff;
+}
+
+#hours ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#hours li {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+/* LOCATION */
+#location p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  margin: 8px 0;
+}
+
+/* BUTTON STYLE */
+.button,
+a.button {
+  display: inline-block;
+  background-color: #722f37;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.button:hover,
+a.button:hover {
+  background-color: #4e1f25;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* SERVICE IMAGES */
+.service-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service-images img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  border: 0;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #722f37;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .service-images img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
